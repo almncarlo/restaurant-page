@@ -12,6 +12,8 @@ body {
     flex-direction: column;
 }
 
+/* NAV BAR */
+
 .navbar {
     background-color: rgb(14, 13, 13);
     display: flex;
@@ -50,6 +52,8 @@ li a:hover {
     cursor: pointer;
     border-top: 3px solid white;
 }
+
+/* HOME PAGE */
 
 .hero {
     width: 100%;
@@ -103,7 +107,6 @@ li a:hover {
     cursor: pointer;
 }
 
-
 .location-div {
     background-color: rgb(255, 183, 0);
     padding: 15px;
@@ -129,4 +132,31 @@ li a:hover {
 
 .location-card > p {
     padding: 0;
+}
+
+/* CONTACT PAGE */
+
+.contact-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.side {
+    width: 50%;
+    height: 900px;
+    background-image: url('./assets/contact.jpeg');
+    background-size: cover;
+    opacity: 90%;
+}
+
+.form-div {
+    width: 50%;
+    height: 900px;
+    background-color: rgb(24, 22, 22);
+}
+
+.form-header {
+    color: white;
+    font-weight: bold;
+    padding: 50px 70px;
 }
