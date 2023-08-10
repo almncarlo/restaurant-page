@@ -6,6 +6,7 @@ body {
     padding: 0;
     margin: 0;
 }
+
 #content {
     display: flex;
     flex-direction: column;
@@ -57,8 +58,9 @@ li a:hover {
     background-size: cover;
     display: flex;
     justify-content: center;
-    opacity: 90%;
-
+    opacity: 85%;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text {
@@ -66,9 +68,41 @@ li a:hover {
     color: rgb(215, 215, 215);
     text-align: center;
     font-size: 75px;
-    padding: 50px;
+    padding: 0;
+    margin: 0;
     opacity: 90%;
 }
+
+.hero-subtext {
+    font-weight: bold;
+    color: rgb(215, 215, 215);
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+    opacity: 100%;
+}
+
+.explore-button {
+    background-color: rgb(255, 183, 0);
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid  rgb(255, 183, 0);
+    width: 200px;
+    font-weight: bolder;
+}
+
+.explore-button:hover {
+    background-color: rgb(210, 154, 12);
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid  rgb(255, 183, 0);
+    width: 200px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
 
 .location-div {
     background-color: rgb(255, 183, 0);
