@@ -1,17 +1,8 @@
-import { menu } from "./menu";
+import { displayNav } from "./nav";
 import Icon from "./assets/hero.jpeg";
 
 const displayHome = (() => {
     const content = document.querySelector('#content');
-    const header = document.createElement('header');
-    const navbar = document.createElement('nav');
-    const buttonList = document.createElement('ul');
-    const homeBox = document.createElement('li');
-    const menuBox = document.createElement('li');
-    const contactBox = document.createElement('li');
-    const homeB = document.createElement('a');
-    const menuB = document.createElement('a');
-    const contactB = document.createElement('a');
     const hero = document.createElement('div');
     const myIcon = new Image();
     const landingText = document.createElement('h1');
@@ -19,40 +10,62 @@ const displayHome = (() => {
     myIcon.src = Icon;
     hero.classList.add('hero');
 
-    // myIcon.classList.add('hero-img');
-
-    homeB.textContent = 'HOME';
-    menuB.textContent = 'MENU';
-    contactB.textContent = 'CONTACT';
-
-    homeBox.appendChild(homeB);
-    menuBox.appendChild(menuB);
-    contactBox.appendChild(contactB);
-
-    homeBox.classList.add('home');
-    menuBox.classList.add('menu');
-    contactBox.classList.add('contact');
-
-    buttonList.appendChild(homeBox);
-    buttonList.appendChild(menuBox);
-    buttonList.appendChild(contactBox);
-    
-    navbar.appendChild(buttonList);
-    navbar.classList.add('navbar');
-
-    header.appendChild(navbar);
-
-    // hero page stuff
+    // hero stuff
     landingText.textContent = "Chicken like never before";
     landingText.classList.add('hero-text');
     hero.appendChild(landingText);
-
-    // reset html when loading home page
-    content.innerHTML = '';
-
-    // add divs to content div
-    content.appendChild(header);
     content.appendChild(hero);
+
+    // home info stuff
+    const location = document.createElement('div');
+    location.classList.add('location-div');
+
+    const locHeading = document.createElement('div');
+    const locTitle = document.createElement('h2');
+    locTitle.textContent = 'OUR LOCATIONS';
+    locTitle.classList.add('locHeading');
+    locHeading.appendChild(locTitle);
+
+    const loc1 = document.createElement('div');
+    const loc1_1 = document.createElement('p');
+    const loc1_2 = document.createElement('p');
+
+    loc1_1.textContent = '308 Negra Arroyo Lane';
+    loc1_2.textContent = 'Albuquerque, NM';
+    loc1.classList.add('location-card');
+    loc1.appendChild(loc1_1);
+    loc1.appendChild(loc1_2);
+
+    const loc2 = document.createElement('div');
+    const loc2_1 = document.createElement('p');
+    const loc2_2 = document.createElement('p');
+
+    loc2_1.textContent = '15 Yemen Road';
+    loc2_2.textContent = 'Yemen';
+    loc2.classList.add('location-card');
+    loc2.appendChild(loc2_1);
+    loc2.appendChild(loc2_2);
+
+    const loc3 = document.createElement('div');
+    const loc3_1 = document.createElement('p');
+    const loc3_2 = document.createElement('p');
+
+    loc3_1.textContent = '2311 North Los Robles Avenue';
+    loc3_2.textContent = 'Pasadena, CA';
+    loc3.classList.add('location-card');
+    loc3.appendChild(loc3_1);
+    loc3.appendChild(loc3_2);
+
+    const loc_cards = document.createElement('div');
+    loc_cards.classList.add('locations');
+
+    location.appendChild(locHeading);
+    loc_cards.appendChild(loc1);
+    loc_cards.appendChild(loc2);
+    loc_cards.appendChild(loc3);
+    location.appendChild(loc_cards);
+
+    content.appendChild(location);
 })();
 
 export { displayHome };
