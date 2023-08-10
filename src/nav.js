@@ -9,10 +9,12 @@ const displayNav = (() => {
     const homeB = document.createElement('a');
     const menuB = document.createElement('a');
     const contactB = document.createElement('a');
+    const title = document.createElement('h2');
 
     homeB.textContent = 'HOME';
     menuB.textContent = 'MENU';
     contactB.textContent = 'CONTACT';
+    title.textContent = "Chicko's";
 
     homeBox.appendChild(homeB);
     menuBox.appendChild(menuB);
@@ -21,11 +23,13 @@ const displayNav = (() => {
     homeBox.classList.add('home');
     menuBox.classList.add('menu');
     contactBox.classList.add('contact');
+    title.classList.add('nav-title');
 
     buttonList.appendChild(homeBox);
     buttonList.appendChild(menuBox);
     buttonList.appendChild(contactBox);
     
+    navbar.appendChild(title);
     navbar.appendChild(buttonList);
     navbar.classList.add('navbar');
 
