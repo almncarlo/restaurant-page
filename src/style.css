@@ -48,9 +48,8 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
     cursor: pointer;
-    border-top: 3px solid white;
+    color: rgb(210, 154, 12);
 }
 
 /* HOME PAGE */
@@ -186,13 +185,25 @@ form > label {
 }
 
 form > button {
-    padding: 20px 5px;
-    font-size: 22px;
+    padding: 12px 0px;
+    font-size: 20px;
     background-color: white;
     color: black;
-    border-width: 1px solid white;
+    border: 1px solid white;
     border-radius: 40px;
-    outline: 0;
-    width: 300px;
-    margin-top: 40px;
+    width: 250px;
+    margin-top: 50px;
+}
+
+form > button:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    padding: 12px 0px;
+    font-size: 18px;
+    background-color: rgb(24, 22, 22);
+    color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 250px;
+    margin-top: 50px;
 }

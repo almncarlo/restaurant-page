@@ -32,18 +32,22 @@ const displayContact = (() => {
     const submit = document.createElement('button');
 
     fname.id = 'fname';
+    fname.type = 'text';
     l_fname.htmlFor = 'fname';
     l_fname.textContent = 'First Name';
 
     lname.id = 'lname';
+    lname.type = 'text';
     l_lname.htmlFor = 'lname';
     l_lname.textContent = 'Last Name';
 
     email.id = 'email';
+    email.type = 'email';
     l_email.htmlFor = 'email';
     l_email.textContent = 'Email Address';
 
     msg.id = 'msg';
+    msg.type = 'text';
     l_msg.htmlFor = 'msg';
     l_msg.textContent = 'What would you like to tell us?';
 
