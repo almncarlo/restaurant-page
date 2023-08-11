@@ -158,5 +158,41 @@ li a:hover {
 .form-header {
     color: white;
     font-weight: bold;
+    font-size: 30px;
     padding: 50px 70px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 70px;
+    gap: 20px;
+    color: white;
+}
+
+form > input {
+    background-color: rgb(24, 22, 22);
+    color: white;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: white;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+form > label {
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+form > button {
+    padding: 20px 5px;
+    font-size: 22px;
+    background-color: white;
+    color: black;
+    border-width: 1px solid white;
+    border-radius: 40px;
+    outline: 0;
+    width: 300px;
+    margin-top: 40px;
 }
