@@ -1,3 +1,15 @@
-const menu = () => console.log('this is the menu page');
+// import Icon from "./assets/contact.jpeg";
 
-export { menu };
+const displayMenu = (() => {
+    const runMenu = () => {
+        const content = document.querySelector('#content');
+        const content_body = document.querySelector('#content-body');
+        content_body.innerHTML = '';
+
+        // stuff here
+    
+    };
+    return { runMenu };
+})();
+
+export { displayMenu };
