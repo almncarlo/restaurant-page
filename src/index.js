@@ -16,12 +16,14 @@ content.append(content_body);
 
 nav.runNav();
 
-const nav_home = document.querySelector('.home');
-const nav_menu = document.querySelector('.menu');
-const nav_contact = document.querySelector('.contact');
+// const nav_home = document.querySelector('.home');
+// const nav_menu = document.querySelector('.menu');
+// const nav_contact = document.querySelector('.contact');
 
-nav_home.addEventListener('click', home.runHome);
-nav_menu.addEventListener('click', menu.runMenu);
-nav_contact.addEventListener('click', contact.runContact);
+// nav_home.addEventListener('click', home.runHome);
+// nav_menu.addEventListener('click', menu.runMenu);
+// nav_contact.addEventListener('click', contact.runContact);
 
-home.runHome();
+// home.runHome();
+
+menu.runMenu();
